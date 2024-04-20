@@ -335,7 +335,7 @@ app.get("/api/fetchGradData", async (req, res) => {
       for (const stat of matchingGithubStats) {
         const date = new Date(stat.commit_date);
         const year = date.getFullYear();
-        if (year >= 2022 && year <= 2023) {
+        if (year > 2022 && year <= 2025) {
           const monthNames = [
             "Jan",
             "Feb",
